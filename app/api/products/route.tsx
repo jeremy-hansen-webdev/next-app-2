@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { schema } from "./schema";
+import { products } from "@/app/lib/db/schema";
+import { db } from "@/app/lib/db";
 
 
-export function GET(request: NextRequest) {
-    return NextResponse.json([
-        {id: 1, name: 'Milk', price: 2.5},
-        {id: 2, name: 'Bread', price: 3.5},
-    ])
+export async function GET(request: NextRequest) {
+    const data = await db.select().from(products)
+    return NextResponse.json(data)
 }
 
 export async function POST(request:NextRequest) {
