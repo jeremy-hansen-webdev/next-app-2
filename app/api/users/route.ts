@@ -18,6 +18,8 @@ export async function POST(request: NextRequest) {
 
     const userExists = await db.select().from(users).where(eq(users.email, body.email))
 
+    if (!validation.success) return NextResponse.json({error: validation.error}, {status: 400})
+        
     if (userExists)
         return NextResponse.json({error: "User Already Exists"}, {status: 400})
 
@@ -26,7 +28,6 @@ export async function POST(request: NextRequest) {
         email: body.email
     })
 
-    if (!validation.success) return NextResponse.json({error: validation.error}, {status: 400})
 
     return NextResponse.json(result, {status: 201})
 }

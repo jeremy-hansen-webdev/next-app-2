@@ -10,7 +10,7 @@ export const users = mysqlTable("users", {
 
 export const products = mysqlTable("products", {
   id: int("id").autoincrement().primaryKey(),
-  name: varchar("name", {length: 255}).notNull(),
+  name: varchar("name", {length: 255}).notNull().unique(),
   price: double("price").default(0),
   createdAt: datetime("created_at").default(new Date())
 })
