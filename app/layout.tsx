@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 // @ts-expect-error typical tailwind error on Next.js
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import { SessionProvider } from "next-auth/react";
 import AuthProvider from "./auth/Provider";
 
 const geistSans = Geist({

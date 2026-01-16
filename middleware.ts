@@ -3,6 +3,8 @@ export {default} from 'next-auth/middleware'
 export const config = {
     // *: zero or more
     // +: one or more
-    // ?: zero or one
-    matcher: ['/users/:id*']
+    // ?: zero or more
+    matcher: [
+        '/users/:id*'
+    ]
 }

@@ -5,29 +5,8 @@
     {
       "idx": 0,
       "version": "5",
-      "when": 1768412524735,
-      "tag": "0000_cheerful_zeigeist",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "5",
-      "when": 1768415855813,
-      "tag": "0001_jazzy_quicksilver",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "5",
-      "when": 1768417496079,
-      "tag": "0002_legal_dragon_lord",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "5",
-      "when": 1768417866618,
-      "tag": "0003_redundant_mentallo",
+      "when": 1768575025854,
+      "tag": "0000_talented_pandemic",
       "breakpoints": true
     }
   ]
