@@ -4,7 +4,6 @@ import { db } from "../../lib/db";
 import { users } from "../../lib/db/schema";
 import { eq } from "drizzle-orm";
 import bcrypt from "bcrypt"
-import NewUser from "../../users/new/page";
 
 const schema = z.object({
     email: z.string().email('Must be an email'),
